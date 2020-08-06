@@ -1,0 +1,189 @@
+@media screen and (max-width: 575.99px) {
+  html,
+  body {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: white !important;
+  }
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #f2f7ff;
+    color: white !important;
+  }
+
+  .header {
+    background-color: #0b409c;
+    height: 60px;
+  }
+
+  .chatpage,
+  .mainpage,
+  .contact-details {
+    height: 100%;
+    width: 100%;
+  }
+
+  .chatpage,
+  .contact-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.45s;
+    transform: translateX(100%);
+  }
+  .contact-details {
+    transform: translateX(0%);
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 5px;
+  }
+  .wrap {
+    background-color: #e4e3e3;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    height: 90%;
+    font-size: 1rem;
+  }
+  .wrap-one {
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+  }
+  .user-data {
+    background-color: transparent;
+  }
+  .user-activities {
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 0 0 30px 30px;
+  }
+  .activity-results {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .follow,
+  .following {
+    box-shadow: 0px 1px 1px #f4f4ff;
+    font-size: 1.1rem;
+  }
+  .user-info {
+    border-radius: 30px;
+    box-shadow: 0px 1px 1px lightblue;
+    background-color: transparent;
+  }
+  .contact-details .header {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    background-color: #f4f6ff;
+    display: none;
+  }
+  .contact-details .header .close-page button {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: steelblue !important;
+  }
+  .search-contact {
+    display: none;
+  }
+  .username {
+    color: white;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
+  .profile-status {
+    color: lightgray;
+  }
+
+  .chatpage {
+    transform: translateX(-100%);
+    z-index: 999;
+    background-color: #f9f9f9;
+  }
+
+  .selected-contact-name {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: white;
+  }
+
+  .chat-state {
+    color: lightgray;
+    font-size: 0.9rem;
+  }
+
+  .chat-manager button {
+    color: lightgrey;
+  }
+
+  .chat-message-form {
+    background-color: #0b409c;
+    padding: 10px 20px;
+    transition: all 0.35s ease;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.35s ease;
+  }
+
+  .input-group {
+    background-color: transparent;
+    padding: 9px;
+    border-radius: 1px;
+    color: white;
+  }
+
+  .message {
+    height: 20px;
+    max-height: 65px;
+    transition: all 0.35s ease;
+    color: white;
+    width: 85%;
+  }
+  ::-webkit-input-placeholder {
+    color: lightgray;
+  }
+
+  .chatbox {
+    height: 87%;
+    overflow: hidden;
+    position: fixed;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+  }
+
+  .chat-history {
+    padding-bottom: 15px;
+  }
+  .chatpage-header {
+    border-radius: 0 0 20px 20px;
+  }
+  button {
+    padding: 5px;
+    color: lightgray !important;
+    text-align: center;
+  }
+  .contacts {
+    height: 90%;
+  }
+  .commands {
+    padding: 10px;
+    justify-content: space-around;
+  }
+  .commands button {
+    color: #0b409c !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

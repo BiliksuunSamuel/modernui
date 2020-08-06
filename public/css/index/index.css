@@ -1,0 +1,608 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #204051;
+  font-family: sans-serif;
+  font-size: 0.85rem;
+}
+
+/*creating my global css variables*/
+:root {
+  --wrapperColor: #dedef0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper,
+.container-fluid,
+.row,
+.col {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid,
+.row,
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainpage {
+  display: flex;
+  flex-flow: column;
+}
+.header {
+  padding: 10px;
+  display: flex;
+  flex-flow: row;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.profile-info {
+  flex: 0.85;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.username,
+.contact-name {
+  font-size: 1rem;
+  color: deepskyblue;
+  font-family: Candara;
+  font-weight: bolder;
+}
+
+.profile-status,
+.last-msg {
+  font-size: 10px;
+  white-space: nowrap;
+  font-family: Candara;
+  color: steelblue;
+  font-weight: bold;
+}
+
+.profile-settings {
+  padding: 5px;
+}
+
+.profile-settings button {
+  color: steelblue;
+  font-size: 13px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.contacts {
+  height: 80%;
+  background-color: transparent;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  transition: all 0.45s ease;
+  padding-bottom: 15px;
+}
+.new-contact {
+  background-color: transparent;
+  width: 100%;
+  padding: 5px;
+  height: 50px;
+  display: flex;
+}
+.new-contact button {
+  width: 40px;
+  height: 40px;
+  background: #e7305b;
+  border-radius: 100% !important;
+  margin: 0px auto;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  box-shadow: 0px 1px 3px #10375c;
+}
+.search-contact {
+  height: 40px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#srchcontact {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  height: 22px;
+  border-style: none;
+  width: 80%;
+  border-radius: 30px;
+  color: gray;
+  outline: none;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+#srchcontact::-webkit-input-placeholder {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: lightgray;
+}
+
+.single-contact {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.45s ease;
+}
+
+.single-contact:hover {
+  background-color: white;
+}
+
+.user-photo {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.contact-info {
+  padding: 5px 0px;
+  display: flex;
+  flex-flow: column;
+  flex: 0.8;
+  overflow: hidden;
+}
+
+.contact-info p {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "lovelo";
+}
+
+.state {
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 12px;
+  font-family: "muli";
+}
+
+.active-state {
+  padding: 5px;
+  border-radius: 30px;
+  background-color: green;
+}
+
+.last-msg {
+  font-family: Candara;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.last-msg-time {
+  font-size: 0.75rem;
+  font-family: "calibri";
+  color: #515585;
+}
+
+.contact-name {
+  font-size: 0.95rem;
+  color: deepskyblue;
+  font-family: Helvetica;
+}
+
+.chatpage-header {
+  background-color: #eef0f2;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+  box-shadow: 0px 1px 2px rgba(211, 211, 211, 0.5);
+}
+
+.photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: transparent;
+  margin: 10px;
+  margin-right: 0px;
+}
+
+.account-name {
+  background-color: transparent;
+  flex: 0.9;
+  padding: 5px;
+  margin-left: -5px;
+}
+
+.selected-contact-name {
+  font-size: 1rem;
+  color: deepskyblue;
+  font-family: Candara;
+  font-weight: 700;
+}
+
+.chat-state {
+  font-size: 0.7rem;
+  color: #515585;
+}
+
+.chat-manager {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.chat-manager button {
+  font-size: 0.85rem;
+  color: steelblue;
+}
+
+.chatbox {
+  background-color: red;
+}
+
+.chat-message-form {
+  background-color: #eef0f2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  align-items: center;
+  padding: 8px 0px;
+  box-shadow: 0px 1px 2px rgba(211, 211, 211, 0.5);
+  transition: all 0.35s ease;
+  text-align: justify;
+}
+
+.form-group {
+  padding: 0;
+}
+
+.form {
+  padding: 0;
+}
+
+.input-group {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 5px;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  justify-content: first baseline;
+  min-height: 30px;
+  border-radius: 1px;
+}
+
+.message {
+  padding: 0px 10px;
+  resize: none;
+  max-height: 60px;
+  border-style: none;
+  height: 20px;
+  width: 80%;
+  outline: none;
+  font-size: 0.8rem;
+  background-color: transparent;
+  font-family: sans-serif;
+  transition: all 0.35s ease;
+}
+
+.form button {
+  color: steelblue;
+  font-weight: lighter;
+}
+
+.profile {
+  padding: 8px;
+  width: 100%;
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+
+.user-info {
+  padding: 10px;
+  width: 100%;
+  background-color: #f1f4f6;
+}
+
+.user-name {
+  font-size: 1rem;
+  font-family: Helvetica;
+  font-weight: 800;
+  letter-spacing: 0.1px;
+  color: deepskyblue;
+  text-align: center;
+}
+
+.user-status {
+  font-size: 0.75rem;
+  color: gray;
+  font-family: Helvetica;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.user-data {
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 1px rgba(211, 211, 211, 0.3);
+  border: 1px solid rgba(211, 211, 211, 0.3);
+  background-color: #f9f9f9;
+}
+
+.single-data {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.single-data label {
+  padding: 5px;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  color: steelblue;
+  font-weight: lighter;
+  width: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.single-data p {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: steelblue;
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.wrap {
+  padding: 10px;
+}
+
+.user-activity {
+  padding: 5px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 1px rgba(211, 211, 211, 0.3);
+  border: 1px solid rgba(211, 211, 211, 0.3);
+  background-color: #f9f9f9;
+}
+
+.activity-results {
+  padding: 5px;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+.activity-follow {
+  width: 50%;
+  padding: 4px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-following {
+  width: 50%;
+  padding: 4px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow,
+.following {
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0px 1px 1px steelblue;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 0.75rem;
+  color: deepskyblue;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.follow-results,
+.following-results {
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  color: deepskyblue;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 30px;
+  width: 100%;
+  box-shadow: 0px 1px 2px rgba(211, 211, 211, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.activity-edit {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#follow-friend {
+  padding: 5px;
+  font-family: Tahoma;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  color: deepskyblue;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.active {
+  background-color: white;
+}
+
+.chatbox {
+  background-color: transparent;
+  height: inherit;
+}
+
+.chat-history {
+  height: inherit;
+  padding: 10px 5px;
+  width: 100%;
+  background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.45s ease;
+  scroll-behavior: smooth;
+}
+.chat {
+  padding: 0px 10px;
+  width: 100%;
+  margin-bottom: 1px;
+  display: inline-block;
+}
+.message-wrapper {
+  max-width: 55%;
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.message-time {
+  font-size: 0.7rem;
+  color: #035aa6;
+}
+.message-text {
+  padding: 5px 6px;
+  max-width: 100%;
+  color: white;
+  background: #035aa6;
+  border-radius: 0px 8px 8px 8px;
+  font-size: 0.8rem;
+  border-style: none;
+}
+.me .message-wrapper {
+  float: right;
+  align-items: flex-end;
+  max-width: 55%;
+}
+.me .message-text {
+  border-radius: 8px 8px 0px 8px;
+  background-color: #0779e4;
+}
+.commands {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: steelblue;
+}
+.commands .btn {
+  color: steelblue;
+  margin: 5px 10px;
+  padding: 6px;
+  font-weight: bold;
+}

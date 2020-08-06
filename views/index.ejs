@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chatme.com</title>
+    <!--adding the custom link files-->
+    <link rel="stylesheet" href="custom/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index/index.css" />
+    <link rel="stylesheet" href="css/index/mobile.css" />
+    <link rel="stylesheet" href="css/index/desktop.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-sm-12 col-md-10 col-lg-8 mx-auto col">
+          <div class="wrapper" id="wrapper">
+            <!--adding the main page-->
+            <div class="mainpage" id="mainpage">
+              <header class="header">
+                <div class="profile-pic">
+                  <img src="resources/sirjoe.jpg" alt="" />
+                </div>
+                <div class="profile-info">
+                  <p class="username">Biliksuun Samuel</p>
+                  <p class="profile-status">
+                    Hoping for the best and expecting the worse
+                  </p>
+                </div>
+                <div class="profile-settings">
+                  <button class="btn btn-sm">
+                    <span class="font-icon"><i class="far fa-pen"></i></span>
+                  </button>
+                </div>
+              </header>
+              <!--search friend tray-->
+              <div class="search-contact">
+                <input
+                  type="search"
+                  name="srchcontact"
+                  id="srchcontact"
+                  placeholder="search contact"
+                />
+              </div>
+              <!--adding the contacts div-->
+              <div class="contacts">
+                <!--adding a single contact-->
+                <div class="single-contact active">
+                  <div class="user-photo">
+                    <img src="resources/louis.jpg" alt="" />
+                  </div>
+                  <div class="contact-info">
+                    <p class="contact-name">Akolgo louis</p>
+                    <p class="last-msg">Hello, good morning</p>
+                  </div>
+                  <div class="state">
+                    <p class="last-msg-time">9.45am</p>
+                    <span class="active-state"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="new-contact">
+                <button
+                  class="btn btn-sm text-center text-sm-light new-contact-button"
+                >
+                  <span class="font-icon"><i class="far fa-plus"></i></span>
+                </button>
+              </div>
+            </div>
+            <!--adding the chatpage-->
+            <div class="chatpage">
+              <header class="header chatpage-header">
+                <div class="photo">
+                  <img src="resources/louis.jpg" alt="" />
+                </div>
+                <div class="account-name">
+                  <p class="selected-contact-name">Akolgo louis</p>
+                  <p class="chat-state">Typing</p>
+                </div>
+                <div class="chat-manager">
+                  <button class="btn btn-sm">
+                    <span class="font-icon"><i class="far fa-pen"></i></span>
+                  </button>
+                </div>
+              </header>
+              <!--adding the chat box-->
+              <div class="chatbox">
+                <div class="chat-history">
+                  <div class="chat friend">
+                    <div class="message-wrapper">
+                      <p class="message-text">Hello!!</p>
+                      <span class="message-time">00.00</span>
+                    </div>
+                  </div>
+                  <div class="chat me">
+                    <div class="message-wrapper">
+                      <p class="message-text">yeah,good evening</p>
+                      <span class="message-time">00.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--adding the chat message form-->
+              <div class="chat-message-form">
+                <form action="/" class="form message-form">
+                  <div class="input-group">
+                    <button type="button" class="btn btn-sm">
+                      <span class="font-icon"
+                        ><i class="far fa-paperclip"></i
+                      ></span>
+                    </button>
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="message"
+                      autocomplete="off"
+                      placeholder="Type message"
+                    ></textarea>
+                    <button
+                      type="submit"
+                      class="send-message btn btn-sm"
+                      id="send-message"
+                    >
+                      <span class="font-icon"
+                        ><i class="far fa-paper-plane"></i
+                      ></span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!--active contact details-->
+            <div class="contact-details">
+              <header class="header">
+                <!--search friend tray-->
+                <div class="search-contact">
+                  <input
+                    type="search"
+                    name="srchcontact"
+                    id="srchcontact"
+                    placeholder="search contact"
+                  />
+                </div>
+              </header>
+              <div class="wrap">
+                <div class="wrap-one">
+                  <div class="profile">
+                    <div class="profile-picture">
+                      <img src="resources/louis.jpg" alt="" />
+                    </div>
+                    <div class="user-info">
+                      <p class="user-name">Akolgo Louis</p>
+                      <p class="user-status">friend status txt</p>
+                    </div>
+                  </div>
+                  <div class="user-data">
+                    <div class="single-data">
+                      <label for="phone" class="data-icon"
+                        ><span class="font-icon"
+                          ><i class="far fa-phone"></i></span
+                      ></label>
+                      <p class="phone" id="phone">0200022789</p>
+                    </div>
+                    <div class="single-data">
+                      <label for="email" class="data-icon"
+                        ><span class="font-icon"
+                          ><i class="far fa-envelope"></i></span
+                      ></label>
+                      <p class="email" id="email">akolgolouis@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-activities">
+                  <div class="activity-results">
+                    <div class="activity-follow">
+                      <div class="follow">
+                        followers
+                      </div>
+                      <div class="follow-results">250</div>
+                    </div>
+                    <div class="activity-following">
+                      <div class="following">
+                        Following
+                      </div>
+                      <div class="following-results">100</div>
+                    </div>
+                  </div>
+                  <div class="activity-edit">
+                    <button
+                      id="follow-friend"
+                      class="btn btn-sm text-primary follow-friend"
+                    >
+                      follow
+                    </button>
+                  </div>
+                </div>
+                <div class="commands">
+                  <button class="commandbtn-back btn btn-sm">
+                    <span class="font-icon"
+                      ><i class="far fa-arrow-left"></i
+                    ></span>
+                  </button>
+                  <button class="commandbtn-chat btn btn-sm">
+                    <span class="font-icon"
+                      ><i class="far fa-comment"></i
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="custom/js/jquery.min.js"></script>
+    <script src="custom/js/bootstrap.bundle.min.js"></script>
+    <script src="custom/js/all.js"></script>
+    <script src="js/index/index.js"></script>
+  </body>
+</html>

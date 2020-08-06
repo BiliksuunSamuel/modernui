@@ -1,0 +1,48 @@
+@media screen and (min-width: 750.1px) {
+  html,
+  body {
+    background-color: #3e64ff;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: row;
+    background-color: #eef0f2;
+    height: 80%;
+    margin: auto 0;
+    border-radius: 10px;
+  }
+
+  .container-fluid,
+  .row,
+  .col {
+    padding: 0px 20px;
+  }
+
+  .chatpage {
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mainpage {
+    width: 27%;
+  }
+
+  .contact-details {
+    width: 23%;
+  }
+  .chatbox {
+    height: 85%;
+    padding-bottom: 10px;
+  }
+  .chat-history {
+    height: 100%;
+    padding-bottom: 10px;
+  }
+  .commandbtn-back {
+    display: none;
+  }
+}
